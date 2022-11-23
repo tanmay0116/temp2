@@ -7,15 +7,14 @@
 }
 
 :root{
-    --primary-color:#22254b;
-    --secondary-color: #373b69;
+    --primary-color:#f1dbce;
+    --secondary-color: #562a0e;
 }
 
 .navigation {
     width: 20em;
     background-color: --secondary-color;
-    position: relative;
-    top: .7em;
+
   }
   
 #user_icon {
@@ -66,14 +65,7 @@
     text-decoration: none;
   }
 
-#logo
-{
-    height:7em;
-    width: 8em;
-    border-radius: 50%;
-    position: relative;
-    left: 8em;
-}
+
 
 
 body{
@@ -88,34 +80,69 @@ header{
     display:flex;
     justify-content: space-between;
     background-color: var(--secondary-color);
+    height: 7em;
 }
 
-#log-out
-{
 
-}
-.search{
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    padding:0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    color:#fff;
-    font-family: inherit;
+form{
     position: relative;
-    top: 2em;
-    left: 7em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    position: relative;
 }
 
-.search:focus{
-    outline:0;
-    background-color: var(--primary-color);
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
 }
 
-.search::placeholder{
-    color: #7378c5;
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
 }
 
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
 main{
     display:flex;
     flex-wrap: wrap;
@@ -170,7 +197,7 @@ main{
     border-radius: 3px;
     font-weight: bold;
     font-size: larger;
-    color: #b892ff;
+    color: #000;
     /* position: relative; */
     /* top: 2em;
     right: 4rem; */
@@ -205,7 +232,8 @@ main{
 }
 .tag{
     color: white;
-    background-image: linear-gradient(to right,#D1913C 0%, #FFD194 51%,#D1913C 100%);
+    /* background-image: linear-gradient(to right,#D1913C 0%, #FFD194 51%,#D1913C 100%); */
+    background-color: #b08968;
     font-weight: bold;
     font-size: larger;
     box-shadow: 1px 1px 1px 1px black;
@@ -236,7 +264,7 @@ main{
     margin: 10px 30px;
     align-items: center;
     justify-content: center;
-    color: white;
+    /* color: white; */
 }
 .page
 {
