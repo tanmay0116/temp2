@@ -5,17 +5,20 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-:root{
-    --primary-color:#f1dbce;
-    --secondary-color: #562a0e;
+header{
+    padding:1rem;
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    height: 7em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
-.navigation {
-    width: 20em;
-    background-color: --secondary-color;
-
-  }
+:root{
+    --primary-color:black;
+    --secondary-color: rgba(22, 87, 117, 0.807);
+}
   
 #user_icon {
     width: 20px;
@@ -28,44 +31,23 @@
   .logout {
     font-size: .8em;
     font-family: 'Oswald', sans-serif;
-      position: relative;
-    right: -25px;
-    /* bottom: -2px; */
-    overflow: hidden;
+    position: relative;
+    right: -15px; 
     letter-spacing: 3px;
-    opacity: 0;
-    transition: opacity .45s;
-    /* -webkit-transition: opacity .35s; */
-    
+    opacity: 1;
   }
   
   .button {
-      text-decoration: none;
-      float: right;
+     text-decoration: none;
+     float: right;
     padding: 12px;
     margin: 15px;
     color: white;
-    width: 2.5em;
+    width: 8em;
     background-color: black;
-    transition: width .35s;
-    /* -webkit-transition: width .35s; */
-    overflow: hidden;
     border-radius: 1em;
   }
   
-  a:hover {
-    width: 150px;
-  }
-  
-  a:hover .logout{
-    opacity: .9;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-
-
 
 
 body{
@@ -75,13 +57,6 @@ body{
 }
 
 
-header{
-    padding:1rem;
-    display:flex;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    height: 7em;
-}
 
 
 form{
@@ -98,6 +73,7 @@ form{
     border: 4px solid white;
     padding: 5px;
     position: relative;
+    left: 35em;
 }
 
 input{
@@ -113,6 +89,8 @@ input{
     font-size: 1em;
     border-radius: 20px;
     padding: 0 20px;
+    background-color: black;
+    color: white;
 }
 
 .fa{
@@ -124,7 +102,8 @@ input{
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: #07051a;
+    color: #fff;
+    background-color: #000;
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
@@ -153,6 +132,7 @@ main{
     width: 300px;
     height: 37em;
     margin: 1rem;
+    border: 1.5px solid black;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px black;
     background-color: var(--secondary-color);
@@ -165,7 +145,7 @@ main{
 .movie:hover
 {
     transform: translate(1%,-1%);
-    box-shadow: .5em .5em black; 
+    box-shadow: .5em .5em white; 
 }
 
 .movie img{
@@ -173,7 +153,7 @@ main{
 }
 
 .movie-info{
-    color:#eee;
+    color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +177,7 @@ main{
     border-radius: 3px;
     font-weight: bold;
     font-size: larger;
-    color: #000;
+    color: white;
     /* position: relative; */
     /* top: 2em;
     right: 4rem; */
@@ -233,10 +213,11 @@ main{
 .tag{
     color: white;
     /* background-image: linear-gradient(to right,#D1913C 0%, #FFD194 51%,#D1913C 100%); */
-    background-color: #b08968;
+    /* background-color: #b08968; */
+    background-color: var(--secondary-color);
     font-weight: bold;
     font-size: larger;
-    box-shadow: 1px 1px 1px 1px black;
+    /* box-shadow: 1px 1px 1px 1px ; */
     text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
     margin: 1em 1em;
     padding: .5em .5em;
@@ -247,7 +228,7 @@ main{
 }
 .tag:hover{
     transform: translate(1%,1%);
-    box-shadow: .25em .25em black;
+    box-shadow: .2em .2em white;
     background-position: right center;
     color: #fff;
     text-decoration: none;
@@ -264,7 +245,16 @@ main{
     margin: 10px 30px;
     align-items: center;
     justify-content: center;
-    /* color: white; */
+    color: white;
+}
+
+#logo
+{
+    position: relative;
+    left: 5em;
+    border:2px solid black;
+    border-radius: 1.5em;
+
 }
 .page
 {
@@ -356,4 +346,9 @@ main{
       top: 15px;
       right: 35px;
     }
+  }
+  .bar
+  {
+    position: relative;
+    /* left: 37em; */
   }
